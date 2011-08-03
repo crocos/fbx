@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:fbx="http://crocos.co.jp/facebook/fbx">
+<head>
+    <title>Facebook Extra Tags</title>
+    <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/fbx.js"></script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+        FB.init({
+            appId  : 'your app id',
+            status : true, // check login status
+            cookie : false, // enable cookies to allow the server to access the session
+            xfbml  : true,  // parse XFBML
+            logging: false
+        });
+    </script>
+
+    <p><fbx:graph field="name" value="1276368138" /></p>
+    <p><fbx:profile field="name" value="1276368138" /></p>
+
+</body>
+</html>
+
