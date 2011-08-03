@@ -109,7 +109,7 @@
                         query: 'SELECT id,'+field+' FROM profile WHERE id IN ('+chunkedValues[i].join(',')+')'
                     }, function(response) {
                         $.each(response, function() {
-                            replaceTag($(tagname('profile')+'[value='+this.id+'][field='+field+']'), this.name);
+                            replaceTag($(tagname('profile')+'[value='+this.id+'][field='+field+']'), this[field]);
                         });
                     });
                 }
